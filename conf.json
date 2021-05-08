@@ -1,0 +1,25 @@
+{
+    "listeners": {
+        "*:8081": {
+            "application": "test_flask"
+        },
+        "*:8082": {
+            "application": "flask_db"
+        },
+    },
+
+    "applications": {
+        "test_flask": {
+            "type": "python3",
+            "path": "/usr/share/nginx/app/test_flask/",
+            "home": "/usr/share/nginx/venv/test_flask/",
+            "module": "main"
+        },
+        "flask_db": {
+            "type": "python3",
+            "path": "/usr/share/nginx/app/flask_db/",
+            "home": "/usr/share/nginx/venv/flask_db/",
+            "module": "run"
+        },
+    }
+}
