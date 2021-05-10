@@ -1,7 +1,7 @@
 {
     "listeners": {
         "*:8081": {
-            "application": "test_flask"
+            "application": "flask_test"
         },
         "*:8082": {
             "application": "flask_db"
@@ -9,17 +9,17 @@
     },
 
     "applications": {
-        "test_flask": {
-            "type": "python3",
-            "path": "/usr/share/nginx/app/test_flask/",
-            "home": "/usr/share/nginx/venv/test_flask/",
+        "flask_test": {
+            "type": "python 3.6.8",
+            "path": "/usr/share/nginx/app/flask_test/",
+            "home": "/usr/share/nginx/venv/flask_test/",
             "module": "main"
         },
         "flask_db": {
-            "type": "python3",
+            "type": "python 3.6.8",
             "path": "/usr/share/nginx/app/flask_db/",
             "home": "/usr/share/nginx/venv/flask_db/",
-            "module": "run"
+            "module": "main"
         },
     }
 }
